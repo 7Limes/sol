@@ -50,7 +50,7 @@ Strings are not pushed to the stack.
 ### 2. Commands
 NOTE: Any operation that has **POPS** in its description will automatically pop elements that it uses from the stack.
 
-NOTE 2: a = 1st stack value, b = 2nd stack value
+NOTE 2: `a` = 1st stack value, `b` = 2nd stack value
 
 #### Output
 - `!` -- Print `a`
@@ -63,7 +63,7 @@ NOTE 2: a = 1st stack value, b = 2nd stack value
 - `>` -- Move `a` to 3rd position (rot)
 - `<` -- Duplicate `b` and push to stack (over)
 - `b` -- Move `a` to the bottom of the stack
-- `t` -- Move bottom stack value to the top of the stack
+- `t` -- Move bottom value to the top of the stack
 
 #### Math
 - `+` -- Add top 2 stack values (a+b) (**POPS**)
@@ -71,12 +71,13 @@ NOTE 2: a = 1st stack value, b = 2nd stack value
 - `*` -- Multiply top 2 stack values (a*b) (**POPS**)
 - `/` -- Divide top 2 stack values (b/a) (**POPS**)
 - `%` -- Modulo top 2 stack values (b%a) (**POPS**)
+- `^` -- Exponentiate top 2 stack values (b^a) (**POPS**)
 
 #### Boolean Logic
 NOTE: 0 = `false`, nonzero = `true` (**POPS**)
 - `=` -- Check a==b (**POPS**)
-- `a` -- Check a&&b (**POPS**)
-- `o` -- Check a||b (**POPS**)
+- `&` -- Check a&&b (**POPS**)
+- `|` -- Check a||b (**POPS**)
 - `n` -- Not operation on `a`
 - `g` -- Check a>b (**POPS**)
 - `l` -- Check a<b (**POPS**)
@@ -84,14 +85,14 @@ NOTE: 0 = `false`, nonzero = `true` (**POPS**)
 - `L` -- Check a<=b (**POPS**)
 - `?` -- If `a` is zero, skip the next line (**POPS**)
 
-#### Looping
-- `@` -- Set a label; numbered according to the previous token
+#### Iteration
+- `@` -- Set a label; named according to the previous token
   - Initialized before interpretation, allows for jumping to later sections of code
 - `j` -- Jump to label named `a` (**POPS**)
 
 #### Input
 - `i` -- Get integer input from stdin and push to the stack.
-- `I` -- Get string input from stdin. The ascii equivalent of each charater will be pushed to the stack in reverse order, followed by the length of the inputted string. For example here's the result when `string` is inputted:
+- `I` -- Get string input from stdin. The ascii equivalent of each charater will be pushed to the stack in reverse order, followed by the length of the inputted string. For example, here's the result when `string` is inputted:
 ```
 (left is top of the stack)
 [6, 115, 116, 114, 105, 110, 103]
