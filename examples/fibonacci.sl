@@ -9,6 +9,3 @@ bb
 $b$b
 9$?j
 _!
-
-\compressed\
-\i01 09@<+$bb1+<<~$b$b9$?j&!\
