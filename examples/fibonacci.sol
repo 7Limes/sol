@@ -1,5 +1,6 @@
-\print nth fibonacci number\
-\27 bytes\
+\ print nth fibonacci number \
+\ 27 bytes excluding newlines \
+
 i01 0
 9@
 <+$
