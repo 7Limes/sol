@@ -87,7 +87,7 @@ NOTE: 0 = `false`, nonzero = `true` (**POPS**)
 #### Looping
 - `@` -- Set a label; numbered according to the previous token
   - Initialized before interpretation, allows for jumping to later sections of code
-- `^` -- Jump to label named `a` (**POPS**)
+- `j` -- Jump to label named `a` (**POPS**)
 
 #### Input
 - `i` -- Get integer input from stdin and push to the stack.
