@@ -9,9 +9,9 @@ A **S**tack **O**riented **L**anguage for code golfing
 ___
 
 ### 1. Basics
-sol has only one type, which is the integer.
+sol can only store one type on the stack, which is the integer.
 
-To push an integer to the stack, simply type the number:
+To push an integer to the stack, simply type it:
 ```
 \ this is a comment \
 10
@@ -35,7 +35,7 @@ Negative numbers can also be pushed, but you must subtract a positive number fro
 1 0-
 ```
 
-The only other *thing* in this language is operators, which actually do all the work. Operators are always single characters and do not require whitespace between them.
+Operators allow you to do things with the stack. Operators are always single characters and thus do not require whitespace between them.
 ```
 \ print fibonacci sequence indefinitely \
 01 1@<+#!_10._$1j
