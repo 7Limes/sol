@@ -13,7 +13,7 @@ sol has only one type, which is the integer.
 
 To push an integer to the stack, simply type the number:
 ```
-\this is a comment\
+\ this is a comment \
 10
 ```
 To push multiple numbers, separate them with either commands or no-op characters like spaces or newlines:
