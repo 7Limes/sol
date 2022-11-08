@@ -78,7 +78,7 @@ NOTE: 0 = `false`, nonzero = `true` (**POPS**)
 - `=` -- Check a==b (**POPS**)
 - `&` -- Check a&&b (**POPS**)
 - `|` -- Check a||b (**POPS**)
-- `n` -- Not operation on `a`
+- `n` -- Not operation on `a` (**POPS**)
 - `g` -- Check a>b (**POPS**)
 - `l` -- Check a<b (**POPS**)
 - `G` -- Check a>=b (**POPS**)
